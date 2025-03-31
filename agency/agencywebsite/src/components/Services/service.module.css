@@ -1,0 +1,90 @@
+.section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1e2a46;
+  margin-bottom: 20px;
+}
+
+.underline {
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: #ff6f61;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.serviceList {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+.serviceCard {
+  padding: 35px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-12);
+  
+}
+
+.serviceCard .cardIcon {
+  background-image: url("./assets/images/service-banner-pattern.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsla(335, 87%, 53%, 0.12);
+  aspect-ratio: 1 / 1;
+  max-width: 165px;
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  transition: var(--transition-1);
+  margin-bottom: 20px;
+}
+
+.serviceCard:hover .cardIcon { background-color: var(--winter-sky); }
+
+.serviceCard .cardIcon ion-icon {
+  font-size: 5rem;
+  color: var(--winter-sky);
+  --ionicon-stroke-width: 20px;
+  transition: var(--transition-1);
+}
+
+.serviceCard:hover .cardIcon ion-icon { color: var(--white); }
+
+.serviceCard .title {
+  text-align: center;
+  margin-block-end: 15px;
+}
+
+.serviceCard .text {
+  text-align: center;
+  margin-block-end: 15px;
+}
+
+.serviceCard .cardBtn {
+  margin-inline: auto;
+  padding: 15px;
+  border: 1px solid var(--winter-sky);
+  border-radius: 50%;
+  color: var(--winter-sky);
+  transition: var(--transition-1);
+}
+
+.serviceCard .cardBtn:is(:hover, :focus) {
+  color: var(--white);
+  background-color: var(--winter-sky);
+}

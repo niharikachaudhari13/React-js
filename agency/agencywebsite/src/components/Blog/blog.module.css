@@ -1,0 +1,154 @@
+.section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1e2a46;
+  margin-bottom: 10px;
+}
+
+.underline {
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: #ff6f61;
+  margin: 10px auto;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+.blog { padding-block-end: 120px; }
+
+.blogList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.blogCard {
+  display: flex; 
+  align-items: center; 
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 20px;
+  gap: 20px; 
+  transition: var(--transition-2);
+}
+
+.blogCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blogCard .banner {
+  flex-shrink: 0; 
+  width: 40%; 
+  height: 200px; 
+  border-radius: var(--radius-12);
+  overflow: hidden;
+}
+
+.blogCard .banner img {
+  width: 100%; 
+  height: 200px; 
+ object-fit: cover;
+  transition: var(--transition-2);
+}
+
+.blogCard .banner img:hover {
+  transform: scale(1.1); 
+}
+
+.blogCard .content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+}
+
+.blogCard .content .title {
+  color: var(--st-patricks-blue);
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.blogCard .content .title > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blogCard .content .title > a:hover {
+  color: var(--razzmatazz);
+}
+
+.blogCard .content .text {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: var(--purple-navy);
+  text-align: left; 
+}
+
+.blogCard .content .meta {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.blogCard .content .meta .publishDate {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.blogCard .content .meta .actions {
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+}
+
+.blogCard .content .meta ion-icon {
+  color: var(--winter-sky);
+  font-size: 22px;
+  --ionicon-stroke-width: 35px;
+}
+
+.blogCard .content .meta .comment,
+.blogCard .content .meta .share {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.blogCard .content .meta .comment {
+  display: flex;
+  align-items: center;
+}
+
+.blogCard .content .meta .share {
+  display: flex;
+  align-items: center;
+}
+
+.blogCard .content .meta button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.blogCard .content .meta .comment data,
+.blogCard .content .meta .share {
+  font-size: 14px;
+}
