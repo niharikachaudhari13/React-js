@@ -1,0 +1,95 @@
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.headerTop {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.headerScrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  font-size: 40px;
+  font-weight:200;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: var(--ff-carter_one);
+}
+
+.logoScrolled {
+  color: #000000; 
+}
+
+
+.navbar {
+  display: flex;
+}
+
+.navbarList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 400px;
+  margin-top: 7px;
+}
+
+.navbarLink {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 100;
+}
+
+.navbarLinkScrolled {
+  color: #000000; 
+}
+
+
+.headerActions {
+  display: flex;
+  gap: 15px;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.headerScrolled .actionBtn {
+  color: #000000; 
+}
+
+
+.btnBadge {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background-color: var(--portland-orange);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

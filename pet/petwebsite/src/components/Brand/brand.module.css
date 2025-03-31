@@ -1,0 +1,85 @@
+
+.container {
+    padding-inline: 15px;
+}
+
+
+.brand {
+    --section-padding: 100px;
+    padding-block: var(--section-padding);
+}
+
+
+.sectionTitle {
+    text-align: center;
+    margin-block-end: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.sectionTitle .span {
+    display: inline;
+    color: var(--portland-orange);
+}
+
+
+.hasScrollbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 20px;
+    margin-block-end: -20px;
+   margin-left: 6%;
+    width: 100%; 
+}
+
+
+.scrollbarItem {
+    min-width: 200px; 
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    
+}
+
+
+.brandCard {
+    max-width: max-content;
+    margin-inline: auto;
+    background-color: var(--light-gray); 
+}
+
+
+.imgHolder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--light-gray);
+    overflow: hidden;
+}
+
+
+.imgCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gridList {
+    display: grid;
+    gap: 30px;
+}
+
+
+
+.btn {
+    background-color: var(--black);
+    color: var(--white);
+    max-width: max-content;
+    padding: 8px 25px;
+    font-weight: var(--fw-700);
+    border-radius: 50px;
+    transition: var(--transition-1);
+}
+.brand .scrollbarItem:not(:last-child) { border-inline-end: 1px solid var(--platinum); }

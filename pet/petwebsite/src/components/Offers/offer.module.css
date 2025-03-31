@@ -1,0 +1,99 @@
+
+.container {
+    padding-inline: 15px;
+    max-width: 1200px;
+    margin: 0 ;
+  }
+  
+  
+  .section {
+    padding-block: 40px;
+  }
+  
+  
+  .gridList {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin-left: 2px;
+  }
+  
+  .gridItem {
+    flex: 1;
+    max-width: 33%;
+    
+    
+  }
+  
+  
+  .offerCard {
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    
+  }
+  
+  
+
+  .cardSubtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+  }
+  
+  
+  .cardTitle {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  .cardTitle .span {
+    color: black;
+  }
+  
+  
+  .btn {
+    background-color: var(--portland-orange);
+    color: var(--white);
+    padding: 8px 25px;
+    border-radius: 50px;
+    
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    width: 135px;
+    
+  }
+  
+  .btn:hover {
+    background-color: var(--black);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .grid-list {
+      flex-direction: column;
+    }
+  
+    .grid-item {
+      max-width: 100%;
+    }
+  
+    .offer-card {
+      height: auto;
+    }
+  }
+  
